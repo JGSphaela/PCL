@@ -260,7 +260,7 @@ NextInner:
         '正版购买提示
         If CurrentLaunchOptions?.SaveBatch Is Nothing AndAlso '保存脚本时不提示
            Not Setup.Get("HintBuy") AndAlso Setup.Get("LoginType") <> McLoginType.Ms Then
-            If IsSystemLanguageChinese() Then
+            If True Then
                 RunInNewThread(
                 Sub()
                     Select Case Setup.Get("SystemLaunchCount")
